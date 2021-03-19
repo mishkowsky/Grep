@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="spbstu">
+    <CLASSES>
+      <root url="file://$MAVEN_REPOSITORY$/org/spbstu" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/org/spbstu" recursive="false" />
+  </library>
+</component>
