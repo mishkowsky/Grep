@@ -22,12 +22,11 @@ public class Grep implements Finder {
         Pattern p;
 
         if (regex) {
-            if (register) p = Pattern.compile(word, Pattern.CASE_INSENSITIVE);
+            if (register) p = Pattern.compile(word, Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
             else p = Pattern.compile(word);
             Matcher m = p.matcher(lowLine);
             needToPrint = m.find() ^ invert;
-        }
-        else {
+        } else {
             if (register) {
                 word = word.toLowerCase();
                 lowLine = line.toLowerCase();
